@@ -33,7 +33,6 @@ module.exports = {
       filename: 'style.css',
     }),
     new HtmlWebpackPlugin({
-      preload: ['*.json'],
       preload: false,
       filename: 'demo.html',
     }),
