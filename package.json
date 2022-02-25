@@ -8,6 +8,10 @@
     "dev": "webpack serve --mode development",
     "build": "webpack --mode production"
   },
+  "resolutions": {
+    "d2/left-pad": "1.1.1",
+    "c/**/left-pad": "^1.1.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/karam084/to_do_list.git"
