@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ResourceHintWebpackPlugin = require('resource-hints-webpack-plugin');
+
 const path = require('path');
 
 module.exports = {
@@ -30,7 +32,14 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'style.css',
     }),
+    new HtmlWebpackPlugin({
+      preload: ['*.json'],
+      preload: false,
+      filename: 'demo.html',
+    }),
+    new ResourceHintWebpackPlugin(),
   ],
+
   stats: {
     children: true,
   },
