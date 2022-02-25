@@ -69,6 +69,14 @@ input[type='text'] {
   color: #888;
 }
 
+li > input[type='text'] {
+  width: 226px;
+}
+
+ul li input[type='text'] {
+  display: none;
+}
+
 input[type='text']:focus {
   color: #333;
 }
@@ -107,21 +115,8 @@ li > label {
   padding: 0 0 0 11px;
 }
 
-li > input[type='text'] {
-  width: 226px;
-}
-
 li > .delete:hover {
   color: #cf2323;
-}
-
-#completed-tasks label {
-  text-decoration: line-through;
-  color: #888;
-}
-
-ul li input[type='text'] {
-  display: none;
 }
 
 ul li.editMode input[type='text'] {
@@ -130,4 +125,9 @@ ul li.editMode input[type='text'] {
 
 ul li.editMode label {
   display: none;
+}
+
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
 }
