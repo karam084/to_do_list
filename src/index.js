@@ -1,5 +1,6 @@
 import './style.css';
 import './style.scss';
+
 const taskInput = document.getElementById('new-task');
 const addButton = document.getElementsByTagName('button')[0];
 const incompleteTaskHolder = document.getElementById('incomplete-tasks');
