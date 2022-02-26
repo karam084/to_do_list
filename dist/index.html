@@ -9,20 +9,39 @@
     />
   <script defer src="main.js"></script><link href="style.css" rel="stylesheet"></head>
   <body>
-    <div id="myDIV" class="header">
-      <h2 style="margin:5px">Today's To Do</h2>
-      <input type="text" id="myInput" placeholder="Title...">
-      <span onclick="newElement()" class="addBtn">Add</span>
+    <div class="container">
+      <p>
+        <label for="new-task">Today's To Do</label>
+        <input id="new-task" type="text"placeholder="Add to your list...">
+        <button>Add</button>
+      </p>
+      <ul id="incomplete-tasks" class="sortlist">
+        <li><input type="checkbox">
+          <label>wash the dishes</label>
+          <input type="text">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+        <li><input type="checkbox">
+          <label>complete To Do list progect</label>
+          <input type="text">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+      </ul>
+      
+      <h3>Completed</h3>
+    <ul id="completed-tasks">
+        <li><input type="checkbox" checked>
+          <label>See completed</label>
+          <input type="text">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+      </ul>
     </div>
-    <ul id="myUL">
-      <li>Hit the gym</li>
-      <li class="checked">Pay bills</li>
-      <li>Meet George</li>
-      <li>Buy eggs</li>
-      <li>Read a book</li>
-      <li>Organize office</li>
-    </ul>
+
     
-  <script src="1d21ee756bd6a708635b.html"></script>
+  <script src="01e6d4ceed9395b5c7e7.html"></script>
   </body>
 </html

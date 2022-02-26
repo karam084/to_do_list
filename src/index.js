@@ -1,10 +1,13 @@
 import './style.css';
 import './style.scss';
 
-const taskInput = document.getElementById('new-task');
-const addButton = document.getElementsByTagName('button')[0];
-const incompleteTaskHolder = document.getElementById('incomplete-tasks');
-const completedTasksHolder = document.getElementById('completed-tasks');
+const tasks = [
+  {
+    description: 'An example description in string',
+    completed: true,
+    index: 10,
+  },
+];
 const createNewTaskElement = function tasks(taskString) {
   const listItem = document.createElement('li');
   const checkBox = document.createElement('input');
@@ -31,6 +34,11 @@ const createNewTaskElement = function tasks(taskString) {
   listItem.appendChild(deleteButton);
   return listItem;
 };
+const taskInput = document.getElementById('new-task');
+const addButton = document.getElementsByTagName('button')[0];
+const incompleteTaskHolder = document.getElementById('incomplete-tasks');
+const completedTasksHolder = document.getElementById('completed-tasks');
+
 const bindTaskEvents = function ckecks(taskListItem, checkBoxEventHandler) {
   const checkBox = taskListItem.querySelector('input[type=checkbox]');
   const editButton = taskListItem.querySelector('button.edit');
