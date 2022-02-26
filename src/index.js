@@ -5,7 +5,7 @@ const tasks = [
   {
     index: 10,
     description: 'Setup Application Server Environment',
-    completed: true,
+    completed: false,
   },
 ];
 export default tasks;
