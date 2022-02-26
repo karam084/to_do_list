@@ -3,11 +3,13 @@ import './style.scss';
 
 const tasks = [
   {
-    description: 'An example description in string',
-    completed: true,
     index: 10,
+    description: 'Setup Application Server Environment',
+    completed: true,
   },
 ];
+export default tasks;
+
 const createNewTaskElement = function tasks(taskString) {
   const listItem = document.createElement('li');
   const checkBox = document.createElement('input');
