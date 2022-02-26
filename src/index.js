@@ -89,11 +89,11 @@ for (let i = 0; i < incompleteTaskHolder.children.length; i += 1) {
 for (let i = 0; i < completedTasksHolder.children.length; i += 1) {
   bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
 }
-const tasks = [
-  {
-    index: 10,
-    description: 'Setup Application Server Environment',
-    completed: false,
-  },
-];
-export default tasks;
+// const tasks = [
+//   {
+//     index: 10,
+//     description: 'Setup Application Server Environment',
+//     completed: false,
+//   },
+// ];
+// export default tasks;
