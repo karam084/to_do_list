@@ -1,15 +1,6 @@
 import './style.css';
 import './style.scss';
 
-const tasks = [
-  {
-    index: 10,
-    description: 'Setup Application Server Environment',
-    completed: false,
-  },
-];
-export default tasks;
-
 const createNewTaskElement = function tasks(taskString) {
   const listItem = document.createElement('li');
   const checkBox = document.createElement('input');
@@ -98,3 +89,11 @@ for (let i = 0; i < incompleteTaskHolder.children.length; i += 1) {
 for (let i = 0; i < completedTasksHolder.children.length; i += 1) {
   bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
 }
+const tasks = [
+  {
+    index: 10,
+    description: 'Setup Application Server Environment',
+    completed: false,
+  },
+];
+export default tasks;

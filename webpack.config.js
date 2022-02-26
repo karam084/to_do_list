@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ResourceHintWebpackPlugin = require('resource-hints-webpack-plugin');
+
 const path = require('path');
 
 module.exports = {
@@ -47,6 +48,7 @@ module.exports = {
       preload: false,
       filename: 'demo.html',
     }),
+    new ResourceHintWebpackPlugin(),
   ],
 
   stats: {
