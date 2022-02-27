@@ -18,7 +18,7 @@ jobs:
         run: |
           npm install -g @lhci/cli@0.7.x
       - name: Lighthouse Report
-        run: npx lhci --telemetry=off.
+        run: npx lhci --telemetry=off
   webhint:
     name: Webhint
     runs-on: ubuntu-18.04
